@@ -41,8 +41,7 @@
     $("#contact-form").validate();
     
     $("#submitButton").on("click", function(event){
-      alert("test");
-      /*var data = {
+      var data = {
         name : $("#contact-first-name").val() + " " + $("#contact-last-name").val(),
         email : $("#contact-email").val(),
         message : $("#contact-message").val()
@@ -63,7 +62,7 @@
         },
         error: function () {
           alert("Submit failed");
-        }});*/
+        }});
     });
     
     $("#find-us-room, #find-us-mobile").on("click", function(event){

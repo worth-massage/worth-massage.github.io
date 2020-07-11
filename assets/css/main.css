@@ -4001,32 +4001,10 @@ input, select, textarea {
 
 	#treatment-list li {
 		padding: 0 5px 10px;
-    cursor: pointer;
-		-moz-transition: background 0.2s ease;
-		-webkit-transition: background 0.2s ease;
-		-ms-transition: background 0.2s ease;
-		transition: background 0.2s ease;
-	}
-
-	#treatment-list li:hover {
-    background: rgba(0,0,0,0.1);
-	}
-
-	#treatment-list li:hover i {
-    color: #ed4933;
-	}
-
-	#treatment-list li:hover h2 {
-    border-bottom: dotted 1px rgba(255,255,255,0.3);
-    color: #ed4933;
 	}
   
   #treatment-list i {
     color: #21b2a6;
-		-moz-transition: color 0.2s ease;
-		-webkit-transition: color 0.2s ease;
-		-ms-transition: color 0.2s ease;
-		transition: color 0.2s ease;
   }
   
   #treatment-list h2 {
@@ -4036,11 +4014,6 @@ input, select, textarea {
     font-size: .95em;
     font-weight: 600;
     letter-spacing: 0.12em;
-    border-bottom: dotted 1px rgba(255,255,255,0.5);
-		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		transition: border-bottom-color 0.2s ease, color 0.2s ease;
   }
   
   #treatment-list i {
@@ -4066,10 +4039,6 @@ input, select, textarea {
     margin-right: 5px;
     font-weight: 700;
   }
-
-	#travel-cost {
-		padding: 0;
-	}
 
 	#pricing h5 {
 		margin-bottom: 0;

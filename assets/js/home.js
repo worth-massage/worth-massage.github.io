@@ -35,6 +35,32 @@
 		}
     
     $("#contact-form").validate();
+    
+    $("#submitButton").click( function() {
+      var data = {
+        name : $("#contact-first-name").val() + " " + $("#contact-last-name").val(),
+        email : $("#contact-email").val(),
+        message : $("#contact-message").val()
+      };
+
+      $.ajax({
+        type: "POST",
+        url : "https://oa9v3vwu25.execute-api.us-east-2.amazonaws.com/amazon-ses-mail-stage",
+        dataType: "json",
+        crossDomain: "true",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(data),
+       
+        success: function () {
+          alert("Submit successful");
+          document.getElementById("contact-form").reset();
+          location.reload();
+        },
+        error: function () {
+          alert("Submit failed");
+        }});
+    });
+    
     $("#find-us-room, #find-us-mobile").on("click", function(event){
       if (!$(this).hasClass("find-us-active")) {
         $("#find-us-room, #find-us-mobile").toggleClass("find-us-active");

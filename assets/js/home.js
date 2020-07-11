@@ -49,7 +49,7 @@
 
       $.ajax({
         type: "POST",
-        url : "https://oa9v3vwu25.execute-api.us-east-2.amazonaws.com/amazon-ses-mail-stage",
+        url : "https://oa9v3vwu25.execute-api.us-east-2.amazonaws.com/amazon-ses-mail-stage/submit",
         dataType: "json",
         crossDomain: "true",
         contentType: "application/json; charset=utf-8",

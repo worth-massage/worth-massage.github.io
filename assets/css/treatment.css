@@ -1,0 +1,72 @@
+.major h1 {
+  font-size: 1.35em;
+  line-height: 1.75em;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+  display: block !important;
+}
+
+.major p {
+  display: inline-block;
+  padding-bottom: .5em;
+  border-bottom: 2px solid rgba(0,0,0,0.15);
+}
+
+p {
+  margin-bottom: 0;
+}
+
+#treatment-container {
+  margin: auto;
+  max-width: 80%;
+}
+
+#treatment-image-container {
+  padding: 25px;
+  background: #2b343d;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#treatment-image {
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#treatment-image img {
+  display: block;
+  margin: auto;
+  margin-top: -150px;
+  max-width: 100%;
+}
+
+#treatment-copy {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgba(0,0,0,0.1);
+  padding: 25px;
+}
+
+#treatment-copy p {
+  color: rgba(255,255,255,0.7);
+  text-align: justify;
+  letter-spacing: 0.01em;
+  line-height: 1.3em;
+}
+
+#treatment-copy h5 {
+  margin-top: 2em;
+  text-align: left;
+}
+
+#treatment-copy h6 {
+  text-align: left;
+}
+
+#treatment-copy ul {
+  text-align: left;
+  letter-spacing: 0.01em;
+  line-height: 1.3em;
+}

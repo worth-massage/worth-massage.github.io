@@ -1,0 +1,119 @@
+#consultation-form {
+  padding-top: 2em;
+}
+
+#consultation-form .major {
+  margin-bottom: 0;
+}
+
+#form {
+  display: none;
+}
+
+.row.gtr-uniform, .row.gtr-uniform > * {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.plain-label {
+  color: #b9bad4 !important;
+  font-size: unset;
+  font-weight: unset;
+}
+
+.faded {
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+.required::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+
+#dob input {
+  display: inline-block;
+  width: 25%;
+}
+
+#dob input:last-of-type {
+  width: 40%;
+}
+
+#medical-history > p {
+  border-radius: 5px;
+  background: rgba(0,0,0,0.2);
+  padding: 3px 8px;
+  margin: 10px 0;
+}
+
+#medical-conditions p, #medical-areas p {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#medical-history > label:last-of-type {
+  margin-top: 0;
+}
+
+#massage-treatment {
+  background: rgba(1,1,1,0.1);
+  border-radius: 5px;
+  padding: 0.25em .75em .75em .75em;
+}
+
+#massage-treatment label {
+  margin-top: .75em;
+}
+
+#massage-treatment .radio label {
+  margin-top: .25em;
+}
+
+#massage-treatment legend {
+  margin: 0;
+}
+
+#terms {
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: rgba(0,0,0,0.1);
+  padding: .75em 1em 0 1em;
+  border-radius: 10px;
+  font-size: .75em;
+  letter-spacing: .01em;
+  line-height: normal;
+}
+
+#terms h6 {
+  display: inline-block;
+  color: #b9bad4 !important;
+  font-size: 1.1em;
+  border-bottom: 1px dotted #b9bad4;
+  line-height: unset;
+  letter-spacing: unset;
+  text-transform: unset;
+  margin: 1em 0 .25em 0;
+  font-weight: 600;
+}
+
+#terms h6:first-of-type {
+  margin-top: 0;
+}
+#terms p {
+  margin: 0;
+}
+
+#terms ul {
+  margin: 0 0 .25em 0;
+}
+
+#terms ul:last-of-type {
+  margin: 0 0 .75em 0;
+}
+
+#submitButton {
+  margin-top: 20px;
+}

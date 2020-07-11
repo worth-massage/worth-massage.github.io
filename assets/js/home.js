@@ -60,8 +60,9 @@
           document.getElementById("contact-form").reset();
           location.reload();
         },
-        error: function () {
-          alert("Submit failed");
+        error: function (xhr, ajaxOptions, thrownError) {
+          alert(xhr.status);
+          alert(thrownError);
         }});
     });
     

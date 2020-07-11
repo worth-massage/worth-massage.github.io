@@ -36,7 +36,8 @@
     
     $("#contact-form").validate();
     
-    $("#submitButton").click( function() {
+    $("#submitButton").on("click", function(event){
+      event.preventDefault();
       alert("test");
       /*var data = {
         name : $("#contact-first-name").val() + " " + $("#contact-last-name").val(),

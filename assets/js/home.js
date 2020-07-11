@@ -34,6 +34,11 @@
 
 		}
     
+    $("#contact-form").submit(function(event) {
+      alert( "Handler for .submit() called." );
+      event.preventDefault();
+    });
+    
     $("#contact-form").validate();
     
     $("#submitButton").on("click", function(event){

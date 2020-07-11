@@ -61,6 +61,7 @@
           location.reload();
         },
         error: function (xhr, ajaxOptions, thrownError) {
+          alert("Submit failed");
           alert(xhr.status);
           alert(thrownError);
         }});

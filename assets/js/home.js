@@ -41,7 +41,7 @@
     $("#contact-form").validate();
     
     $("#submitButton").on("click", function(event){
-      alert($.parseJSON(grecaptcha.getResponse()));
+      alert($.parseJSON(grecaptcha.getResponse("grecaptcha")));
       var data = {
         name : $("#contact-name").val(),
         email : $("#contact-email").val(),

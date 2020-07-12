@@ -41,7 +41,7 @@
     $("#contact-form").validate();
     
     $("#submitButton").on("click", function(event){
-      alert(grecaptcha.getResponse("grecaptcha"));
+      /*alert(grecaptcha.getResponse("grecaptcha"));*/
       var data = {
         name : $("#contact-name").val(),
         email : $("#contact-email").val(),
@@ -60,10 +60,8 @@
           alert("Submit successful");
           document.getElementById("contact-form").reset();
         },
-        error: function (xhr, ajaxOptions, thrownError) {
+        error: function () {
           alert("Submit failed");
-          alert(xhr.status);
-          alert(thrownError);
         }});
     });
     

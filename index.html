@@ -195,13 +195,9 @@
                 </header>
                 <form id="contact-form" method="post">
                   <div class="row gtr-uniform">
-                    <div class="col-6 col-12-xsmall">
-                      <label for="contact-first-name">First Name</label>
-                      <input type="text" name="contact-first-name" id="contact-first-name" value="" placeholder="First Name" required />
-                    </div>
-                    <div class="col-6 col-12-xsmall">
-                      <label for="contact-last-name">Last Name</label>
-                      <input type="text" name="contact-last-name" id="contact-last-name" value="" placeholder="Last Name" required />
+                    <div class="col-12">
+                      <label for="contact-name">Full Name</label>
+                      <input type="text" name="contact-name" id="contact-name" value="" placeholder="Full Name" required />
                     </div>
                     <div class="col-12">
                       <label for="contact-email">Email Address</label>
@@ -211,6 +207,7 @@
                       <label for="contact-message">Enter your message:</label>
                       <textarea name="contact-message" id="contact-message" placeholder="Enter your message" rows="3" required></textarea>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6Le1s9kSAAAAAKO2hcyxjjTyYn8bmxR185-TWcNy"></div>
                     <div class="col-12">
                       <ul class="actions">
                         <li><input id="submitButton" type="submit" value="Send Message" class="primary" /></li>
@@ -250,6 +247,8 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/home.js"></script>
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 	</body>
 </html>

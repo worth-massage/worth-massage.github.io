@@ -112,6 +112,18 @@ noscript > p {
   font-size: .75em;
   letter-spacing: .01em;
   line-height: normal;
+  scrollbar-color: rgba(0,0,0,0.2) rgba(0,0,0,0.1);
+}
+
+#terms::-webkit-scrollbar {
+  width: 12px;
+  -webkit-overflow-scrolling: auto;
+}
+#terms::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+#terms::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
 }
 
 #terms h6 {

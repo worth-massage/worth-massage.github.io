@@ -42,7 +42,7 @@
   padding: 0 1.25em;
 }
 
-.about-info h3::before {
+#about h3::before {
   font-family: FontAwesome;
   display: block;
   font-size: 5em;
@@ -110,7 +110,6 @@
 }
 
 #about button:hover {
-  /*background: rgba(0,0,0,.05);*/
   border-bottom-color: rgba(0,0,0,.2);
   color: rgba(0,0,0,.2);
 }

@@ -115,7 +115,8 @@ noscript > p {
   scrollbar-color: rgba(0,0,0,0.2) rgba(0,0,0,0.1);
 }
 
-#terms::-webkit-scrollbar {
+#terms::-webkit-scrollbar:vertical {
+  -webkit-appearance: none;
   width: 12px;
   -webkit-overflow-scrolling: auto;
 }

@@ -64,15 +64,15 @@ noscript > p {
   width: 40%;
 }
 
-#medical-areas.col-12-xsmall {
-  margin-top: .5em !important;
-}
-
 #medical-history > p {
   border-radius: 5px;
   background: rgba(0,0,0,0.2);
   padding: 3px 8px;
   margin: 10px 0;
+}
+
+#medical-conditions {
+  margin-bottom: .5em;
 }
 
 #medical-conditions p, #medical-areas p {

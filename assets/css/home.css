@@ -5,6 +5,128 @@
   transform: translateY(10px);
 }
 
+/* About */
+
+#about {
+  overflow: hidden;
+}
+
+#about header.major {
+  margin-bottom: 0;
+}
+
+#about-info-container {
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+#about-info-container.slide-right {
+  transform: translateX(1250px);
+}
+
+#about-info-container.slide-left {
+  transform: translateX(-1250px);
+}
+
+#about-info-container.fade {
+  opacity: 0;
+}
+
+.about-info {
+  font-size: .975em;
+  letter-spacing: .04em;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 30em;
+  padding: 0 1.25em;
+}
+
+.about-info h3::before {
+  font-family: FontAwesome;
+  display: block;
+  font-size: 5em;
+  line-height: 1em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.about-info p {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  .about-info {
+    text-align: left;
+  }
+  
+  .about-info h3::before {
+    display: inline;
+    margin-right: .25em;
+    vertical-align: middle;
+  }
+  
+  .about-info button {
+    padding: 0 !important;
+  }
+}
+
+#more-about-service, #more-about-rating {
+  transition: transform 0.5s ease;
+}
+
+#more-about-service.slide {
+  transform: translateX(-1250px);
+}
+
+#more-about-rating.slide {
+  transform: translateX(1250px);
+}
+
+#more-about-tom {
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+#more-about-tom.fade {
+  opacity: 0;
+}
+
+#about button {
+  padding: 0 10px;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  line-height: 1.9em;
+  text-transform: uppercase;
+  font-size: .95em;
+  letter-spacing: .2em;
+  border: none;
+  border-bottom: dotted 1px rgba(0,0,0,.4);
+  box-shadow: none;
+  background: transparent;
+  color: rgba(0,0,0,.4);
+  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  transition: border-bottom-color 0.2s ease, color 0.2s ease;
+}
+
+#about button:hover {
+  /*background: rgba(0,0,0,.05);*/
+  border-bottom-color: rgba(0,0,0,.2);
+  color: rgba(0,0,0,.2);
+}
+
+#about-service h3::before, #more-about-service h3::before {
+  content: "\f015";
+}
+
+#about-tom h3::before, #more-about-tom h3::before {
+  content: "\f007";
+}
+
+#about-rating h3::before, #more-about-rating h3::before {
+  content: "\f006";
+}
+
 #pricing a {
   padding-bottom: 5px;
 }

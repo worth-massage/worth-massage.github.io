@@ -10,6 +10,29 @@
   display: none;
 }
 
+#form label.error {
+  margin-top: 5px !important;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #d4919c;
+  padding: 5px 8px;
+  color: #813332;
+  background-color: #dba4a4;
+}
+
+noscript.error {
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #d4919c;
+  padding: 5px 5px 0px 5px;
+  color: #813332;
+  background-color: #dba4a4;
+}
+
+noscript > p {
+  margin-bottom: 1em;
+}
+
 .row.gtr-uniform, .row.gtr-uniform > * {
   margin-top: 0 !important;
   padding-top: 0 !important;
@@ -39,6 +62,10 @@
 
 #dob input:last-of-type {
   width: 40%;
+}
+
+#medical-areas.col-12-xsmall {
+  margin-top: .5em !important;
 }
 
 #medical-history > p {
@@ -115,5 +142,5 @@
 }
 
 #submitButton {
-  margin-top: 20px;
+  margin: 20px 0;
 }

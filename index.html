@@ -20,33 +20,20 @@
 						<h1><a href="index.html">Worth Massage</a></h1>
 						<nav id="nav">
 							<ul>
-                <li>
-                  <a href="#home" class="scrolly">Home</a>
-                </li>
-                <li>
-                  <a href="#about" class="scrolly">About</a>
-                </li>
-                <li>
-                  <a href="#treatments" class="scrolly">Treatments</a>
-                </li>
-                <li>
-                  <a href="#pricing" class="scrolly">Pricing</a>
-                </li>
-                <li>
-                  <a href="#contact" class="scrolly">Contact</a>
-                </li>
-                <li>
-                  <a href="#book-now" class="button icon fa-calendar scrolly">Book Now</a>
-                </li>
+                <li><a href="#home" class="scrolly">Home</a></li>
+                <li><a href="#about" class="scrolly">About</a></li>
+                <li><a href="#treatments" class="scrolly">Treatments</a></li>
+                <li><a href="#pricing" class="scrolly">Pricing</a></li>
+                <li><a href="#contact" class="scrolly">Contact</a></li>
+                <li><a href="#book-now" class="button icon fa-calendar scrolly">Book Now</a></li>
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
 											<li><a href="#home" class="scrolly"><span class="icon fa-home"></span>Home</a></li>
-											<li><a href="#about-me" class="scrolly"><span class="icon fa-user"></span>About</a></li>
+											<li><a href="#about" class="scrolly"><span class="icon fa-user"></span>About</a></li>
 											<li><a href="#treatments" class="scrolly"><span class="icon fa-list"></span>Treatments</a></li>
 											<li><a href="#pricing" class="scrolly"><span class="icon fa-gbp"></span>Pricing</a></li>
-											<li><a href="#testimonials" class="scrolly"><span class="icon fa-comments"></span>Reviews</a></li>
 											<li><a href="#contact" class="scrolly"><span class="icon fa-phone"></span>Contact</a></li>
 											<li><a href="#book-now" class="scrolly"><span class="icon fa-calendar"></span>Book Now</a></li>
 										</ul>
@@ -112,7 +99,7 @@
 				<!-- Information -->
 					<section id="information" class="wrapper alt style2">
 						<section id="treatments" class="spotlight">
-							<div class="image"><img src="images/candle.jpg" alt="" /></div>
+							<div class="image"><img src="assets/images/candle.jpg" alt="" /></div>
               <div class="content">
 								<h1>Treatments</h1>
 								<ul id="treatment-list">
@@ -132,7 +119,7 @@
 							</div>
 						</section>
 						<section id="pricing" class="spotlight">
-							<div class="image"><img src="images/pebbles-stacked.jpg" alt="" /></div><div class="content">
+							<div class="image"><img src="assets/images/pebbles-stacked.jpg" alt="" /></div><div class="content">
 								<h1>Pricing</h1>
 								<table>
                   <thead>
@@ -175,15 +162,6 @@
               </div>
 						</div>
 					</section>
-        
-        <!-- Reviews -->
-					<section id="reviews" class="wrapper style2">
-						<div class="inner">
-							<header class="major">
-								<h2>Reviews</h2>
-							</header>
-            </div>
-          </section>
           
 				<!-- Contact -->
 					<section id="contact" class="wrapper style4">
@@ -193,6 +171,7 @@
                   <h1>Contact</h1>
                   <p class="no-margin-bottom">For bookings or enquiries, feel free to call or text us on <a href="tel:07752463226">07752 463226</a> or email us using the form below.</p>
                 </header>
+                <noscript class="error"><span class="bold">This form requires Javascript to be enabled in your browser.</span> To enable Javascript, please follow the instructions found at <a href="https://www.enable-javascript.com">www.enable-javascript.com</a> and refresh this page afterwards.</noscript>
                 <form id="contact-form" method="post">
                   <div class="row gtr-uniform">
                     <div class="col-12">
@@ -207,11 +186,11 @@
                       <label for="contact-message">Enter your message:</label>
                       <textarea name="contact-message" id="contact-message" placeholder="Enter your message" rows="3" required></textarea>
                     </div>
-                    <div id="grecaptcha" class="g-recaptcha" data-theme="dark" data-sitekey="6Le1s9kSAAAAAKO2hcyxjjTyYn8bmxR185-TWcNy"></div>
                     <div class="col-12">
-                      <ul class="actions">
-                        <li><input id="submitButton" type="submit" value="Send Message" class="primary" /></li>
-                      </ul>
+                      <button type="button" id="submitButton" class="primary">Send Message</button>
+                    </div>
+                    <div id="form-response-container" class="col-12">
+                      <p id="form-response"></p>
                     </div>
                   </div>
                 </form>
@@ -222,6 +201,7 @@
                   <button id="find-us-room" class="find-us-active icon fa-home">Treatment Room</button>
                   <button id="find-us-mobile" class="icon fa-car">Mobile Service</button>
                 </div>
+                <noscript class="error"><span class="bold">These maps require Javascript to be enabled in your browser.</span> To enable Javascript, please follow the instructions found at <a href="https://www.enable-javascript.com">www.enable-javascript.com</a> and refresh this page afterwards.</noscript>
                 <iframe id="find-us-map-room" src="https://maps.google.com/maps?q=Meadow%20Close,%20Rottingdean&amp;t=&amp;z=12&amp;output=embed" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="400px" frameborder="0"></iframe>
                 <iframe id="find-us-map-mobile" src="https://maps.google.com/maps?q=Worth%20Massage,%20Brighton%20%26%20Hove&amp;t=&amp;z=10&amp;output=embed" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="400px" frameborder="0"></iframe>
               </div>
@@ -238,7 +218,6 @@
 			</div>
 
 		<!-- Scripts -->
-      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

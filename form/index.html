@@ -20,45 +20,22 @@
 						<h1><a href="../">Worth Massage</a></h1>
 						<nav id="nav">
 							<ul>
-                <li>
-                  <a href="../#home" class="scrolly">Home</a>
-                </li>
-                <li>
-                  <a href="../#about" class="scrolly">About</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#treatments" class="scrolly icon fa-angle-down dropdown-button">Treatments</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Sports Massage</a></li>
-                    <li><a href="#">Deep Tissue Massage</a></li>
-                    <li><a href="#">Relaxing Body Massage</a></li>
-                    <li><a href="#">Seated Acupressure Massage</a></li>
-                    <li><a href="#">Mobile Massage</a></li>
-                    <li><a href="#">Event Massage</a></li>
-                    <li><a href="#">Corporate Massage</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="../#pricing" class="scrolly">Pricing</a>
-                </li>
-                <li>
-                  <a href="../#contact" class="scrolly">Contact</a>
-                </li>
-                <li>
-                  <a href="../#book-now" class="button icon fa-calendar scrolly">Book Now</a>
-                </li>
+                <li><a href="../#home" class="scrolly">Home</a></li>
+                <li><a href="../#about" class="scrolly">About</a></li>
+                <li><a href="../#treatments" class="scrolly">Treatments</a></li>
+                <li><a href="../#pricing" class="scrolly">Pricing</a></li>
+                <li><a href="../#contact" class="scrolly">Contact</a></li>
+                <li><a href="../#book-now" class="button icon fa-calendar scrolly">Book Now</a></li>
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
 											<li><a href="../#home" class="scrolly"><span class="icon fa-home"></span>Home</a></li>
-											<li><a href="../#about-me" class="scrolly"><span class="icon fa-user"></span>About Me</a></li>
-											<li><a href="../#treatments" class="scrolly"><span class="icon fa-list"></span>My Treatments</a></li>
-											<li><a href="../#open-hours" class="scrolly"><span class="icon fa-clock-o"></span>Opening Hours</a></li>
+											<li><a href="../#about" class="scrolly"><span class="icon fa-user"></span>About</a></li>
+											<li><a href="../#treatments" class="scrolly"><span class="icon fa-list"></span>Treatments</a></li>
 											<li><a href="../#pricing" class="scrolly"><span class="icon fa-gbp"></span>Pricing</a></li>
-											<li><a href="../#testimonials" class="scrolly"><span class="icon fa-comments"></span>Testimonials</a></li>
-											<li><a href="../#book-now" class="scrolly"><span class="icon fa-calendar"></span>Book Now</a></li>
 											<li><a href="../#contact" class="scrolly"><span class="icon fa-phone"></span>Contact</a></li>
+											<li><a href="../#book-now" class="scrolly"><span class="icon fa-calendar"></span>Book Now</a></li>
 										</ul>
 									</div>
 								</li>
@@ -72,28 +49,32 @@
 							<header class="major">
 								<h2>Consultation Form</h2>
 							</header>
-              <form id="form" method="post" action="#">
+              <noscript class="error">
+                <p><span class="bold">This form requires Javascript to be enabled in your browser.</span><br>To enable Javascript, please follow the instructions found at <a href="https://www.enable-javascript.com">www.enable-javascript.com</a> and refresh this page afterwards.</p>
+                <iframe src="https://www.enable-javascript.com/" width="100%" height="800" frameborder="0"></iframe>
+              </noscript>
+              <form id="form" method="post">
                 <fieldset>
                   <div class="row gtr-uniform">
-                    <div class="col-6 col-12-xsmall">
+                    <div class="col-6 col-6-xsmall">
                       <label for="first-name" class="required">First Name</label>
                       <input type="text" name="first-name" id="first-name" maxlength="5" value="" placeholder="First Name" required />
                     </div>
-                    <div class="col-6 col-12-xsmall">
+                    <div class="col-6 col-6-xsmall">
                       <label for="last-name" class="required">Last Name</label>
                       <input type="text" name="last-name" id="last-name" value="" placeholder="Last Name" required />
                     </div>
-                    <fieldset id="dob" class="col-3">
+                    <fieldset id="dob" class="col-3 col-6-medium col-12-xsmall">
                       <legend class="required">Date of Birth (DD / MM / YYYY)</legend>
-                      <input type="number" name="dob-day" id="dob-day" value="" placeholder="01" min="01" max="31" maxlength="2" required />
-                      <input type="number" name="dob-month" id="dob-month" value="" placeholder="01" min="01" max="12" required />
-                      <input type="number" name="dob-year" id="dob-year" value="" placeholder="2050" required />
+                      <input type="number" name="dob-day" id="dob-day" value="" placeholder="dd" min="01" max="31" maxlength="2" required data-msg-required="Date of Birth Day is required." data-msg-min="Please enter a day greater than or equal to 01." data-msg-max="Please enter a day less than or equal to 31."/>
+                      <input type="number" name="dob-month" id="dob-month" value="" placeholder="mm" min="01" max="12" required data-msg-required="Date of Birth Month is required." data-msg-min="Please enter a month greater than or equal to 01." data-msg-max="Please enter a month less than or equal to 12." />
+                      <input type="number" name="dob-year" id="dob-year" value="" placeholder="yyyy" required data-msg-required="Date of Birth Year is required."/>
                     </fieldset>
-                    <div class="col-4 col-12-xsmall">
+                    <div class="col-4 col-6-medium col-12-xsmall">
                       <label for="phone" class="required">Phone Number</label>
                       <input type="tel" name="phone" id="phone" value="" placeholder="Phone" required />
                     </div>
-                    <div class="col-5 col-12-xsmall">
+                    <div class="col-5 col-12-small">
                       <label for="email" class="required">Email Address</label>
                       <input type="email" name="email" id="email" value="" placeholder="Email" required />
                     </div>
@@ -105,7 +86,7 @@
                       <legend>Medical History</legend>
                       <p>Please read carefully through the following conditions and provide any details relevant to you in the "Client Notes" section below:</p>
                       <div class="row gtr-uniform">
-                        <div id="medical-conditions" class="col-6">
+                        <div id="medical-conditions" class="col-6 col-12-xsmall">
                           <p>Medical conditions:</p>
                           <ul>
                             <li>Arthritis</li>
@@ -120,7 +101,7 @@
                             <li>Varicose Veins</li>
                           </ul>
                         </div>
-                        <div id="medical-areas" class="col-6">
+                        <div id="medical-areas" class="col-6 col-12-xsmall">
                           <p>Medical concerns in the following areas:</p>
                           <ul>
                             <li>Digestive</li>
@@ -146,7 +127,7 @@
                         </ul>
                       </div>
                       <label class="required" for="client-notes">Client Notes</label>
-                      <textarea name="client-notes" id="client-notes" placeholder="If you have no medical information to provide, please enter &quot;N/A&quot;" rows="3" required></textarea>
+                      <textarea name="client-notes" id="client-notes" placeholder="If you have no medical information to provide, please enter &quot;N/A&quot;" rows="3" required data-msg-required="This field is required - if you have no medical information to provide, please enter &quot;N/A&quot;"></textarea>
                     </div>
                   </div>
                 </fieldset>
@@ -158,18 +139,18 @@
                         <fieldset>
                           <legend class="plain-label">Have you received a massage before?</legend>
                           <div class="radio row gtr-uniform">
-                            <div class="col-1 col-12-small">
+                            <div class="col-1 col-2-medium col-3-small">
                               <input type="radio" id="had-massage-yes" name="had-massage">
                               <label for="had-massage-yes">Yes</label>
                             </div>
-                            <div class="col-1 col-12-small">
+                            <div class="col-1">
                               <input type="radio" id="had-massage-no" name="had-massage">
                               <label for="had-massage-no">No</label>
                             </div>
                           </div>
                         </fieldset>
                         <div class="row gtr-uniform">
-                          <div class="col-6">
+                          <div class="col-6 col-12-xsmall">
                             <label for="treatment-type" class="plain-label">What type of treatment are you looking for?</label>
                             <select id="treatment-type" name="treatment-type">
                               <option value="Unsure">Unsure</option>
@@ -178,7 +159,7 @@
                               <option value="Relaxing Body Massage">Relaxing Body Massage</option>
                             </select>
                           </div>
-                          <div class="col-6">
+                          <div class="col-6 col-12-xsmall">
                             <label for="pressure-level" class="plain-label">What level of pressure would you prefer?</label>
                             <select id="pressure-level" name="pressure-level">
                               <option value="Unsure">Unsure</option>
@@ -187,11 +168,11 @@
                               <option value="Gentle">Gentle</option>
                             </select>
                           </div>
-                          <div class="col-6">
+                          <div class="col-6 col-12-small">
                             <label for="desired-outcome" class="plain-label">Desired outcome from the treatment:</label>
                             <textarea name="desired-outcome" id="desired-outcome" placeholder="Optional" rows="2"></textarea>
                           </div>
-                          <div class="col-6">
+                          <div class="col-6 col-12-small">
                             <label for="avoid-areas" class="plain-label">Any specific areas to be avoided:</label>
                             <textarea name="avoid-areas" id="avoid-areas" placeholder="Optional" rows="2"></textarea>
                           </div>
@@ -244,7 +225,7 @@
                         </ul>
                       </div>
                       <input type="checkbox" id="terms-agree" name="terms-agree" value="I have read and agree to the terms & conditions" required>
-                      <label class="required" for="terms-agree">I have read and agree to the terms &amp; conditions</label>
+                      <label id="terms-agree-label" class="required" for="terms-agree">I have read and agree to the terms &amp; conditions</label>
                       <input type="checkbox" id="mailing-list" name="mailing-list" value="Add me to the mailing list">
                       <label for="mailing-list">Keep up to date with our services and special offers by joining our mailing list</label>
                     </div>
@@ -252,7 +233,10 @@
                 </fieldset>
                 <div class="row gtr-uniform">
                   <div class="col-12">
-                    <input id="submitButton" type="button" value="Submit" class="primary" />
+                    <button type="button" id="submitButton" class="primary">Submit</button>
+                  </div>
+                  <div id="form-response-container" class="col-12">
+                    <p id="form-response"></p>
                   </div>
                 </div>
               </form>

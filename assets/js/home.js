@@ -34,36 +34,49 @@
 
 		}
     
-    $("#contact-form").submit(function(event) {
+    /*$("#contact-form").submit(function(event) {
       event.preventDefault();
+    });*/
+    
+    var validator = $("#contact-form").validate();
+    
+    $("#contact-form input, #contact-form textarea").focusout(function () {
+      validator.element(this);
     });
     
-    $("#contact-form").validate();
-    
-    $("#submitButton").on("click", function(event){
-      /*alert(grecaptcha.getResponse("grecaptcha"));*/
+    function submitForm() {
+      if (!$("#contact-form").valid()) {
+        return;
+      }
+      
       var data = {
-        name : $("#contact-name").val(),
-        email : $("#contact-email").val(),
-        message : $("#contact-message").val()
+        type: "contact",
+        name: $("#contact-name").val(),
+        email: $("#contact-email").val(),
+        message: $("#contact-message").val()
       };
 
       $.ajax({
         type: "POST",
-        url : "https://oa9v3vwu25.execute-api.us-east-2.amazonaws.com/amazon-ses-mail-stage/submit",
+        url: "https://oa9v3vwu25.execute-api.us-east-2.amazonaws.com/amazon-ses-mail-stage/submit",
         dataType: "json",
         crossDomain: "true",
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(data),
        
         success: function () {
-          alert("Submit successful");
+          $("#form-response").html("<span class='bold'>Thank you</span>, your message has been sent.").removeClass().addClass("success");
+          $("#form-response-container").slideDown(500);
           document.getElementById("contact-form").reset();
         },
         error: function () {
-          alert("Submit failed");
-        }});
-    });
+          $("#form-response").html("<span class='bold'>Oops, we're having technical difficulties!</span> Please contact us on <a href='tel:07752463226'>07752 463226</a> instead.").removeClass().addClass("error");
+          $("#form-response-container").slideDown(500);
+        }
+      });
+    }
+    
+    $("#submitButton").on("click", submitForm);
     
     $("#find-us-room, #find-us-mobile").on("click", function(event){
       if (!$(this).hasClass("find-us-active")) {

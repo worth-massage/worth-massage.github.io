@@ -14,48 +14,34 @@
   display: inline-block;
 }
 
-.faq {
-  background: rgba(255,255,255,0.1);
-  border-radius: 5px;
-  padding: 5px 8px 0px 8px;
-  display: inline-block;
-  float: right;
-}
-
-.faq i {
-  margin-right: 5px;
-  color: #21b2a6;
-  font-size: 1.5em;
-}
-
-#treatments .faq {
-  float: none;
-  background: rgba(0,0,0,0.2);
-  margin-bottom: 2em;
-}
-
-#treatments .faq i {
-  color: #ed4933;
-}
-
-#treatments .faq p {
-  vertical-align: top;
-}
-
-.faq p {
-  display: inline-block;
-  font-size: .75em;
-  letter-spacing: 0.05em;
-  margin: 0;
-}
-
 #contact-form {
   margin-top: 1em;
-  /*background: rgba(0,0,0,0.5);
-  padding: 20px;
-  border-radius: 5px;*/
 }
 
 #contact-form label {
   margin-top: 0;
+}
+
+#contact-form label.error {
+  margin-top: 5px !important;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #d4919c;
+  padding: 5px 8px;
+  color: #813332;
+  background-color: #dba4a4;
+}
+
+#submitButton {
+  margin-bottom: 1.5em;
+}
+
+noscript.error {
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #d4919c;
+  padding: 5px;
+  color: #813332;
+  background-color: #dba4a4;
+  text-align: left;
 }

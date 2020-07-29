@@ -55,7 +55,7 @@
               </noscript>
               <form id="form" method="post">
                 <fieldset>
-                  <div class="row gtr-uniform">
+                  <div id="contact-details" class="row gtr-uniform">
                     <div class="col-6 col-6-xsmall">
                       <label for="first-name" class="required">First Name</label>
                       <input type="text" name="first-name" id="first-name" maxlength="5" value="" placeholder="First Name" required />
@@ -64,7 +64,7 @@
                       <label for="last-name" class="required">Last Name</label>
                       <input type="text" name="last-name" id="last-name" value="" placeholder="Last Name" required />
                     </div>
-                    <fieldset id="dob" class="col-3 col-6-medium col-12-xsmall">
+                    <fieldset id="dob" class="col-4 col-6-medium col-12-xsmall">
                       <legend class="required">Date of Birth (DD / MM / YYYY)</legend>
                       <input type="number" name="dob-day" id="dob-day" value="" placeholder="dd" min="01" max="31" maxlength="2" required data-msg-required="Date of Birth Day is required." data-msg-min="Please enter a day greater than or equal to 01." data-msg-max="Please enter a day less than or equal to 31."/>
                       <input type="number" name="dob-month" id="dob-month" value="" placeholder="mm" min="01" max="12" required data-msg-required="Date of Birth Month is required." data-msg-min="Please enter a month greater than or equal to 01." data-msg-max="Please enter a month less than or equal to 12." />
@@ -74,7 +74,7 @@
                       <label for="phone" class="required">Phone Number</label>
                       <input type="tel" name="phone" id="phone" value="" placeholder="Phone" required />
                     </div>
-                    <div class="col-5 col-12-small">
+                    <div class="col-4 col-6-medium col-12-small">
                       <label for="email" class="required">Email Address</label>
                       <input type="email" name="email" id="email" value="" placeholder="Email" required />
                     </div>
@@ -139,7 +139,7 @@
                         <fieldset>
                           <legend class="plain-label">Have you received a massage before?</legend>
                           <div class="radio row gtr-uniform">
-                            <div class="col-1 col-2-medium col-3-small">
+                            <div class="col-2 col-3-small">
                               <input type="radio" id="had-massage-yes" name="had-massage">
                               <label for="had-massage-yes">Yes</label>
                             </div>

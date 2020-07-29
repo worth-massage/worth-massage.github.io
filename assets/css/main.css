@@ -511,16 +511,7 @@ input, select, textarea {
 
 		.row {
 			margin-top: 0;
-			margin-left: -1.5em;
 		}
-
-			.row > * {
-				padding: 0 0 0 1.5em;
-			}
-
-			.row.gtr-uniform {
-				margin-top: -1.5em;
-			}
 
 				.row.gtr-uniform > * {
 					padding-top: 1.5em;
@@ -754,16 +745,7 @@ input, select, textarea {
 
 				.row {
 					margin-top: 0;
-					margin-left: -1.5em;
 				}
-
-					.row > * {
-						padding: 0 0 0 1.5em;
-					}
-
-					.row.gtr-uniform {
-						margin-top: -1.5em;
-					}
 
 						.row.gtr-uniform > * {
 							padding-top: 1.5em;
@@ -999,16 +981,7 @@ input, select, textarea {
 
 				.row {
 					margin-top: 0;
-					margin-left: -1.5em;
 				}
-
-					.row > * {
-						padding: 0 0 0 1.5em;
-					}
-
-					.row.gtr-uniform {
-						margin-top: -1.5em;
-					}
 
 						.row.gtr-uniform > * {
 							padding-top: 1.5em;
@@ -1244,16 +1217,7 @@ input, select, textarea {
 
 				.row {
 					margin-top: 0;
-					margin-left: -1.5em;
 				}
-
-					.row > * {
-						padding: 0 0 0 1.5em;
-					}
-
-					.row.gtr-uniform {
-						margin-top: -1.5em;
-					}
 
 						.row.gtr-uniform > * {
 							padding-top: 1.5em;
@@ -1489,16 +1453,7 @@ input, select, textarea {
 
 				.row {
 					margin-top: 0;
-					margin-left: -1.5em;
 				}
-
-					.row > * {
-						padding: 0 0 0 1.5em;
-					}
-
-					.row.gtr-uniform {
-						margin-top: -1.5em;
-					}
 
 						.row.gtr-uniform > * {
 							padding-top: 1.5em;
@@ -1734,16 +1689,7 @@ input, select, textarea {
 
 				.row {
 					margin-top: 0;
-					margin-left: -1.5em;
 				}
-
-					.row > * {
-						padding: 0 0 0 1.5em;
-					}
-
-					.row.gtr-uniform {
-						margin-top: -1.5em;
-					}
 
 						.row.gtr-uniform > * {
 							padding-top: 1.5em;
@@ -1832,7 +1778,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			header.major {
-				text-align: left;
+				/*text-align: left;*/
 			}
 
 		}
@@ -2417,7 +2363,6 @@ input, select, textarea {
 			font-weight: 600;
       padding: .75em 1.5em .75em 0;
 			text-align: right;
-      width: 160px;
 		}
 
 		/*table thead {
@@ -2843,7 +2788,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0 ;
+		padding: 4em 0;
 	}
 
 		.wrapper > .inner {
@@ -3365,7 +3310,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.wrapper {
-				padding: 4em 3em 2em 3em ;
+				padding: 4em 3em;
 			}
 
 		}
@@ -3373,7 +3318,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.wrapper {
-				padding: 3em 2em 1em 2em ;
+				padding: 3em 2em;
 			}
 
 		}
@@ -3884,6 +3829,7 @@ input, select, textarea {
 
 	body.is-preload #header.alt {
 		opacity: 0;
+    pointer-events: none;
 	}
   
   .hide {
@@ -3893,7 +3839,7 @@ input, select, textarea {
 /* Information */
 
 	#information {
-		text-align: left;
+		/*text-align: left;*/
 	}
 
 	#treatment-list {
@@ -3948,33 +3894,6 @@ input, select, textarea {
 		margin-bottom: 0;
 	}
 
-/* Book Now */
-
-	#book-now {
-		padding: 4em 2em 1em 2em;
-	}
-  
-  #book-now header {
-    margin-bottom: 0;
-  }
-  
-  #book-now h2 {
-    margin-bottom: 0;
-    line-height: 1em;
-  }
-
-	#book-now p {
-    display: inline;
-    font-size: .75em;
-    letter-spacing: .05em;
-    border-bottom: dotted 1px;
-    margin-bottom: 0;
-  }
-  
-	#book-now p:hover {
-    border-bottom: solid 1px rgba(0,0,0,0);
-  }
-
 /* Reviews */
   #reviews {
     background: #2a333c;
@@ -4027,15 +3946,13 @@ input, select, textarea {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      border-radius: 5px 5px 0 0;
       max-width: 30em;
       margin: auto;
-      margin-bottom: 10px;
       padding: 0;
     }
     
     #find-us-room {
-      margin-right: 10px;
+      /*margin-right: 10px;*/
     }
     
     #find-us-buttons button {
@@ -4045,10 +3962,12 @@ input, select, textarea {
       padding: 0 5px;
       box-shadow: none;
       color: #fff;
+      outline: 0;
       font-size: .8em;
       font-weight: 700;
       letter-spacing: .2em;
       text-transform: uppercase;
+      margin: 0 5px 8px 5px;
       flex: 1 1 200px;
       -ms-flex: 1;
       -moz-transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
@@ -4072,11 +3991,12 @@ input, select, textarea {
       border: 2px solid #ed4933;
     }
     
-    #find-us-map-mobile {
+    #find-us-mobile-map {
       display: none;
     }
     
     #find-us-container iframe {
+      background: rgba(255,255,255,0.1);
       border-radius: 5px;
     }
     
@@ -4092,7 +4012,7 @@ input, select, textarea {
 
 			#contact .inner {
 				display: block;
-				text-align: center;
+				text-align: left;
 			}
 
 				#contact-form-container {

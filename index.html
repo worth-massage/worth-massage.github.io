@@ -65,30 +65,56 @@
                 <div class="row gtr-uniform">
                   <div id="about-service" class="about-info col-4 col-12-medium">
                     <h3>Home Or Away</h3>
-                    <p>Enjoy a massage in the comfort of your own home or visit us in Rottingdean for a truly authentic massage experience.</p>
+                    <p>Enjoy your massage in the comfort of our treatment room or let us bring the massage to you for the ultimate convenience.</p>
                     <button>View Your Options</button>
                   </div>
                   <div id="about-tom" class="about-info col-4 col-12-medium">
                     <h3>Meet Tom</h3>
-                    <p>Tom is the friendly face behind Worth Massage providing you with all your massage needs.</p>
+                    <p>Tom is the friendly face behind Worth Massage and is here to provide you with all of your massage needs.</p>
                     <button>More About Tom</button>
                   </div>
                   <div id="about-rating" class="about-info col-4 col-12-medium">
                     <h3>Quality Service</h3>
-                    <p>Worth Massage is highly rated &amp; recommended giving you peace of mind that you're getting the very best treatment.</p>
+                    <p>Worth Massage comes highly recommended giving you peace of mind that you're getting the very best treatment.</p>
                     <button>See for yourself</button>
                   </div>
                 </div>
               </div>
               <div id="more-about-service" class="slide hide">
-                <h3>Our Service</h3>
-                <p>Choose between our mobile or treatment room service.</p>
-                <button>Back</button>
+                <div id="about-service-buttons">
+                  <button id="about-room" class="about-service-button about-service-active icon fa-home">Treatment Room</button>
+                  <button id="about-mobile" class="about-service-button icon fa-car">Mobile Service</button>
+                </div>
+                <div class="row gtr-uniform">
+                  <div id="about-room-text" class="col-6 col-12-medium">
+                    <h3>Our Treatment Room</h3>
+                    <p>Surrounded by beautiful countryside, our treatment room in Rottingdean is the perfect space for your massage and is well equipped to ensure your treatment ticks all the boxes. Located just a pebble's throw away from Brighton, we have plenty of free parking available nearby and are easily accessible via the 2/2A bus so visiting us couldn't be easier.</p>
+                    <button>Back</button>
+                  </div>
+                  <div id="about-room-map" class="col-6 col-12-medium">
+                    <iframe src="https://maps.google.com/maps?q=Meadow%20Close,%20Rottingdean&amp;t=&amp;z=12&amp;output=embed" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="400px" frameborder="0"></iframe>
+                  </div>
+                  <div id="about-mobile-text" class="col-6 col-12-medium">
+                    <h3>Our Mobile Service</h3>
+                    <p>No need to leave the house; our mobile service saves you the time and hassle of travelling to and from your massage treatment. All the necessary equipment is provided by us allowing you to sit back, kick your feet up and enjoy a truly effortless experience. We operate within Brighton &amp; Hove and the surrounding area as seen on our map, however for those of you that are located outside of our area, please feel free to get in touch regardless as exceptions can be made.</p>
+                    <button>Back</button>
+                  </div>
+                  <div id="about-mobile-map" class="col-6 col-12-medium">
+                    <iframe src="https://maps.google.com/maps?q=Worth%20Massage,%20Brighton%20%26%20Hove&amp;t=&amp;z=10&amp;output=embed" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="400px" frameborder="0"></iframe>
+                  </div>
+                </div>
               </div>
               <div id="more-about-tom" class="fade hide">
-                <h3>About Tom</h3>
-                <p>Tom is the one the one the one.</p>
-                <button>Back</button>
+                <div class="row gtr-uniform">
+                  <div id="about-tom-text" class="col-6 col-12-medium">
+                    <h3>About Tom</h3>
+                    <p>&quot;Hi, my name is Tom and I'm an FHT qualified Sports Massage therapist. I have variety of experience including years of serving the Brighton area, massaging in the French Alps during a 5 month winter season, working within both a local gym and chiropractic clinic, as well as providing my services at various office workplaces and events. I work with a wide range of clients coming from all walks of life. My goal is to provide a massage finely tailored to your needs that will leave you feeling the difference.&quot;</p>
+                    <button>Back</button>
+                  </div>
+                  <div id="about-tom-image" class="col-6 col-12-medium">
+                    <img src="assets/images/tom-worth-massage-therapist.jpg" alt="Tom with massage table &amp; towels">
+                  </div>
+                </div>
               </div>
               <div id="more-about-rating" class="slide hide">
                 <h3>Reviews</h3>
@@ -134,13 +160,13 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th><a href="#about" class="scrolly">Treatment Room</a></th>
+                      <th><a id="treatment-room-link" href="#about">Treatment Room</a></th>
                       <td>£25</td>
                       <td>£40</td>
                       <td>£60</td>
                     </tr>
                     <tr>
-                      <th><a href="#about" class="scrolly">Mobile Service</a></th>
+                      <th><a id="mobile-service-link" href="#about">Mobile Service</a></th>
                       <td>-</td>
                       <td>£50</td>
                       <td>£70</td>
@@ -169,18 +195,16 @@
 					<section id="contact" class="wrapper style4">
 						<div class="inner">
               <div id="contact-form-container">
-                <header>
-                  <h1>Contact</h1>
-                  <p class="no-margin-bottom">For bookings or enquiries, feel free to call or text us on <a href="tel:07752463226">07752 463226</a> or email us using the form below.</p>
-                </header>
+                <header><h1>Contact</h1></header>
                 <noscript class="error"><span class="bold">This form requires Javascript to be enabled in your browser.</span> To enable Javascript, please follow the instructions found at <a href="https://www.enable-javascript.com">www.enable-javascript.com</a> and refresh this page afterwards.</noscript>
+                <p class="no-margin-bottom">For bookings or enquiries, feel free to call or text us on <a href="tel:07752463226">07752 463226</a> or email us using the form below.</p>
                 <form id="contact-form" method="post">
                   <div class="row gtr-uniform">
-                    <div class="col-12">
+                    <div class="col-12 col-6-medium col-12-small">
                       <label for="contact-name">Full Name</label>
                       <input type="text" name="contact-name" id="contact-name" value="" placeholder="Full Name" required />
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-6-medium col-12-small">
                       <label for="contact-email">Email Address</label>
                       <input type="email" name="contact-email" id="contact-email" value="" placeholder="Email" required />
                     </div>
@@ -204,8 +228,8 @@
                   <button id="find-us-mobile" class="icon fa-car">Mobile Service</button>
                 </div>
                 <noscript class="error"><span class="bold">These maps require Javascript to be enabled in your browser.</span> To enable Javascript, please follow the instructions found at <a href="https://www.enable-javascript.com">www.enable-javascript.com</a> and refresh this page afterwards.</noscript>
-                <iframe id="find-us-map-room" src="https://maps.google.com/maps?q=Meadow%20Close,%20Rottingdean&amp;t=&amp;z=12&amp;output=embed" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="400px" frameborder="0"></iframe>
-                <iframe id="find-us-map-mobile" src="https://maps.google.com/maps?q=Worth%20Massage,%20Brighton%20%26%20Hove&amp;t=&amp;z=10&amp;output=embed" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="400px" frameborder="0"></iframe>
+                <iframe id="find-us-room-map" src="https://maps.google.com/maps?q=Meadow%20Close,%20Rottingdean&amp;t=&amp;z=12&amp;output=embed" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="400px" frameborder="0"></iframe>
+                <iframe id="find-us-mobile-map" src="https://maps.google.com/maps?q=Worth%20Massage,%20Brighton%20%26%20Hove&amp;t=&amp;z=10&amp;output=embed" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="400px" frameborder="0"></iframe>
               </div>
 						</div>
 					</section>

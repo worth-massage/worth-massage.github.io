@@ -77,7 +77,14 @@
   $("#find-us-room, #find-us-mobile").on("click", function(event){
     if (!$(this).hasClass("find-us-active")) {
       $("#find-us-room, #find-us-mobile").toggleClass("find-us-active");
-      $("#find-us-map-room, #find-us-map-mobile").toggle();
+      $("#find-us-room-map, #find-us-mobile-map").toggle();
+    }
+  });
+  
+  $("#about-room, #about-mobile").on("click", function(event){
+    if (!$(this).hasClass("about-service-active")) {
+      $("#about-room, #about-mobile").toggleClass("about-service-active");
+      $("#about-room-map, #about-room-text, #about-mobile-map, #about-mobile-text").toggle();
     }
   });
   
@@ -85,13 +92,14 @@
     $("#about-info-container").toggleClass("slide-right");
     window.setTimeout(function() {
       $("#about-info-container, #more-about-service").toggleClass("hide");
+      $(window).scrollTop($("#about").offset().top - 45);
       window.setTimeout(function() {
         $("#more-about-service").toggleClass("slide");
       }, 100);
     }, 500);
   });
   
-  $("#more-about-service button").on("click", function(event){
+  $("#about-room-text button, #about-mobile-text button").on("click", function(event){
     $("#more-about-service").toggleClass("slide");
     window.setTimeout(function() {
       $("#about-info-container, #more-about-service").toggleClass("hide");
@@ -105,6 +113,7 @@
     $("#about-info-container").toggleClass("fade");
     window.setTimeout(function() {
       $("#about-info-container, #more-about-tom").toggleClass("hide");
+      $(window).scrollTop($("#about").offset().top - 45);
       window.setTimeout(function() {
         $("#more-about-tom").toggleClass("fade");
       }, 100);
@@ -125,6 +134,7 @@
     $("#about-info-container").toggleClass("slide-left");
     window.setTimeout(function() {
       $("#about-info-container, #more-about-rating").toggleClass("hide");
+      $(window).scrollTop($("#about").offset().top - 45);
       window.setTimeout(function() {
         $("#more-about-rating").toggleClass("slide");
       }, 100);
@@ -139,6 +149,11 @@
         $("#about-info-container").toggleClass("slide-left");
       }, 100);
     }, 500);
+  });
+
+  $("#treatment-room-link, #mobile-service-link").on("click", function(event){
+    $("#about-info-container").addClass("hide slide-right");
+    $("#more-about-service").removeClass("slide hide");
   });
   
 })(jQuery);

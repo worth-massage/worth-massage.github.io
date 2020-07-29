@@ -11,7 +11,7 @@
   <!-- DO NOT FORGET TO SET YOUR OWN API KEY!  -->
   <!-- Create an API key: -->
   <!-- https://console.developers.google.com/apis/library/places-backend.googleapis.com/?q=places -->
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDm2ez0jSRHt54ZVhswnt1HekKeM2TCYRg"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm2ez0jSRHt54ZVhswnt1HekKeM2TCYRg&libraries=places"></script>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
   <script>
     jQuery(document).ready(function($) {
       if ($("#google-reviews").length == 0) {
-        return
+        return;
       }
       //Find a placeID via https://developers.google.com/places/place-id
       $("#google-reviews").googlePlaces({

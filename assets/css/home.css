@@ -61,17 +61,22 @@
   }
   
   #about h3::before {
-    display: inline;
+    display: inline-block;
     margin-right: .25em;
+    margin-bottom: 0;
     vertical-align: middle;
   }
+
+  #about-tom h3::before {
+    width: 90px;
+  }
   
-  .about-info button {
+  .about-info button, .about-info a {
     padding: 0 !important;
   }
   
   #about-tom {
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.05);
     margin-top: 1.5em;
     padding-bottom: 1.5em;
   }
@@ -217,7 +222,7 @@
   opacity: 0;
 }
 
-#about button {
+#about button, #about a {
   padding: 0 10px;
   font-family: "Open Sans", Helvetica, sans-serif;
   line-height: 1.9em;
@@ -233,6 +238,15 @@
   -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
   -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
   transition: border-bottom-color 0.2s ease, color 0.2s ease;
+}
+
+#about a {
+  display: inline-block;
+  font-weight: 600;
+}
+
+#about button:hover, #about a:hover {
+  border-bottom: dotted 1px rgba(0,0,0,0);
 }
 
 #about-room-text button:hover, #about-mobile-text button:hover {

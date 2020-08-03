@@ -62,13 +62,8 @@
   
   #about h3::before {
     display: inline-block;
-    margin-right: .25em;
-    margin-bottom: 0;
+    margin: 0 .25em 0 0 !important;
     vertical-align: middle;
-  }
-
-  #about-tom h3::before {
-    width: 90px;
   }
   
   .about-info button, .about-info a {

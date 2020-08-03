@@ -261,10 +261,14 @@
 #about-tom h3::before {
   content: "";
   height: 90px;
+  width: 90px;
   background-image: url("../images/tom-face.png");
   background-repeat: no-repeat;
   background-position: center; 
   background-size: contain;
+  margin: 0 auto 30px;
+  border-radius: 45px;
+  border: 2px solid #1d9c91;
 }
 
 #about-rating h3::before, #more-about-rating h3::before {

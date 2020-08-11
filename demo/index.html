@@ -29,12 +29,14 @@
     jQuery(document).ready(function($) {
       if ($("#google-reviews").length == 0) {
         return;
-      }
+      
+      alert("test1");
       //Find a placeID via https://developers.google.com/places/place-id
       $("#google-reviews").googlePlaces({
         placeId: 'ChIJSXeTMXWFdUgRDMOBQsGOlsU',
         // add more settings here
       });
+      alert("test2");
     });
   </script>
 

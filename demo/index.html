@@ -26,11 +26,12 @@
   <div id="google-reviews"></div>
 
   <script>
+      alert("test0");
     jQuery(document).ready(function($) {
+      alert("test1");
       if ($("#google-reviews").length == 0) {
         return;
       
-      alert("test1");
       //Find a placeID via https://developers.google.com/places/place-id
       $("#google-reviews").googlePlaces({
         placeId: 'ChIJSXeTMXWFdUgRDMOBQsGOlsU',

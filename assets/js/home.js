@@ -7,10 +7,10 @@
 (function($) {
 
 	var	$window = $(window),
-		$body = $('body'),
-		$wrapper = $('#page-wrapper'),
-		$banner = $('#home'),
-		$header = $('#header');
+      $body = $('body'),
+      $wrapper = $('#page-wrapper'),
+      $banner = $('#home'),
+      $header = $('#header');
 
 	// Play initial animations on page load.
 		$window.on('load', function() {

@@ -17,7 +17,7 @@
 <body>
 
   <!-- load the plugin/script -->
-  <script src="./node_modules/jquery-google-reviews/jquery-google-reviews.js" defer></script>
+  <script src="./node_modules/jquery-google-reviews/jquery-google-reviews.js"></script>
 
   <!-- load the css to display the reviews beautifully -->
   <link href="./node_modules/jquery-google-reviews/jquery-google-reviews.css" rel="stylesheet">
@@ -26,18 +26,11 @@
   <div id="google-reviews"></div>
 
   <script>
-      alert("test0");
-    /*jQuery(document).ready(function($) {
-      alert("test1");
-      if ($("#google-reviews").length == 0) {
-        return;
-      
-      //Find a placeID via https://developers.google.com/places/place-id
-      $("#google-reviews").googlePlaces({
-        placeId: 'ChIJSXeTMXWFdUgRDMOBQsGOlsU',
-        // add more settings here
-      });
-    });*/
+    (function($) {
+      if ($("#google-reviews").length == 0) return;
+      $("#google-reviews").googlePlaces({placeId: 'ChIJSXeTMXWFdUgRDMOBQsGOlsU'});
+      alert("test END");
+    })(jQuery);
   </script>
 
 </body>

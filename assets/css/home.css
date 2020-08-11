@@ -131,7 +131,7 @@
 
 #about-service-buttons button:hover {
   background: #ed4933;
-  border: 2px solid #ed4933;
+  border: 2px solid #ed4933 !important;
 }
 
 #more-about-service > .row {

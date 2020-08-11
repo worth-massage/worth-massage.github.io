@@ -151,9 +151,22 @@
     }, 500);
   });
 
-  $("#treatment-room-link, #mobile-service-link").on("click", function(event){
+ $("#treatment-room-link").on("click", function(event){
     $("#about-info-container").addClass("hide slide-right");
     $("#more-about-service").removeClass("slide hide");
+    $("#about-room").addClass("about-service-active");
+    $("#about-mobile").removeClass("about-service-active");
+    $("#about-room-map, #about-room-text").show();
+    $("#about-mobile-map, #about-mobile-text").hide();
+  });
+  
+  $("#mobile-service-link").on("click", function(event){
+    $("#about-info-container").addClass("hide slide-right");
+    $("#more-about-service").removeClass("slide hide");
+    $("#about-mobile").addClass("about-service-active");
+    $("#about-room").removeClass("about-service-active");
+    $("#about-mobile-map, #about-mobile-text").show();
+    $("#about-room-map, #about-room-text").hide();
   });
   
 })(jQuery);

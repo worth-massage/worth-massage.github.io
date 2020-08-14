@@ -5,32 +5,16 @@
 		<meta charset="utf-8" />
 	</head>
 	<body>
-
-		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-      <script src="https://connect.facebook.net/en_US/sdk.js"></script>
-    
-      <script>
-        $(document).ready(function() {
-          $.ajaxSetup({ cache: true });
-            FB.init({
-              appId: '649843745945687',
-              version: 'v8.0'
-            });
-            FB.api(
-              '/worthmassage/ratings',
-              'GET',
-              {},
-              function(response) {
-                if (response) {
-                  if (response.error) console.log(response.error);
-                  else alert(response);
-                } else alert("nooo");
-              }
-            );
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '649843745945687',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v8.0'
         });
-      </script>
-
-
+      };
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 	</body>
 </html>

@@ -8,11 +8,11 @@
 
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
+      <script src="https://connect.facebook.net/en_US/sdk.js"></script>
     
       <script>
         $(document).ready(function() {
           $.ajaxSetup({ cache: true });
-          $.getScript('https://connect.facebook.net/en_US/sdk.js', function(){
             FB.init({
               appId: '649843745945687',
               version: 'v8.0'
@@ -28,7 +28,6 @@
                 } else alert("nooo");
               }
             );
-          });
         });
       </script>
 

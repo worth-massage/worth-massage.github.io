@@ -141,7 +141,7 @@
     }, 500);
   });
   
-  $("#more-about-rating button").on("click", function(event){
+  $("#more-about-rating > button").on("click", function(event){
     $("#more-about-rating").toggleClass("slide");
     window.setTimeout(function() {
       $("#about-info-container, #more-about-rating").toggleClass("hide");
@@ -149,7 +149,7 @@
         $("#about-info-container").toggleClass("slide-left");
       }, 100);
     }, 500);
-  });
+  });  
 
  $("#treatment-room-link").on("click", function(event){
     $("#about-info-container").addClass("hide slide-right");

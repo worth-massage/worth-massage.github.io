@@ -266,8 +266,13 @@
   border: 2px solid #1d9c91;
 }
 
-#about-rating h3::before, #more-about-rating h3::before {
+#about-rating h3::before {
   content: "\f005";
+}
+
+#more-about-rating iframe {
+  border: 2px solid #1d9c91;
+  border-radius: 10px;
 }
 
 #information .image {

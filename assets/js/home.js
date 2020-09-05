@@ -153,6 +153,9 @@
 
  $("#treatment-room-link").on("click", function(event){
     $("#about-info-container").addClass("hide slide-right");
+    $("#about-info-container").removeClass("slide-left fade");
+    $("#more-about-tom").addClass("hide fade");
+    $("#more-about-rating").addClass("hide slide");
     $("#more-about-service").removeClass("slide hide");
     $("#about-room").addClass("about-service-active");
     $("#about-mobile").removeClass("about-service-active");
@@ -162,6 +165,9 @@
   
   $("#mobile-service-link").on("click", function(event){
     $("#about-info-container").addClass("hide slide-right");
+    $("#about-info-container").removeClass("slide-left fade");
+    $("#more-about-tom").addClass("hide fade");
+    $("#more-about-rating").addClass("hide slide");
     $("#more-about-service").removeClass("slide hide");
     $("#about-mobile").addClass("about-service-active");
     $("#about-room").removeClass("about-service-active");

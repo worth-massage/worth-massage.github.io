@@ -1,0 +1,130 @@
+#reviews {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#reviews .review-item {
+  -ms-flex: 1;
+  min-width: 325px;
+  max-width: 360px;
+  margin: 0 20px 0 20px;
+  text-align: center;
+  color: #fff;
+}
+
+#reviews .review-item:first-child {
+  margin-left: 0;
+}
+
+#reviews .review-item:last-child {
+  margin-right: 0;
+}
+
+#reviews .review-text {
+  line-height: 1.5;
+  text-align: center;
+  max-width: 32em;
+  margin: .25em auto .5em;
+  color: rgba(255,255,255,0.8);
+  background: rgba(0,0,0,0.075);
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 0.95em;
+}
+
+.review-header {
+  text-align: left;
+  padding: 0 10px;
+}
+
+.review-meta, .review-stars {
+  font-size: 115%;
+  float: right;
+}
+
+.review-author {
+  font-weight: 600;
+  font-size: 1.3em;
+  color: rgba(0,0,0,0.4);
+  margin: 0;
+}
+
+.review-date {
+  opacity: .7;
+  display: block;
+  font-size: 0.85em;
+  margin: 0;
+}
+
+.review-stars ul {
+  display: inline-block;
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.review-stars ul li {
+  float: left;
+  list-style: none !important;
+  margin-right: 1px;
+  line-height: 1;
+  padding: 0;
+}
+
+.review-stars ul li i { 
+  color: #f4c430;
+  font-size: 1.4em;
+  font-style: normal;
+}
+
+.review-stars ul li i.inactive {
+  color: #c6c6c6;
+}
+
+.star:after {
+  content: "\2605";
+}
+
+.review-footer {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 1em;
+}
+
+.review-footer img {
+  margin-right: 5px;
+}
+
+.review-footer .google-logo {
+  border-radius: 25px;
+  background: rgba(255,255,255,0.9);
+  border: 2px solid transparent;
+}
+
+.review-footer p {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 1480px) {
+  .review-item:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .review-item:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #reviews {
+    flex-wrap: wrap;
+  }
+  
+  #reviews .review-item {
+    margin: 0
+  }
+}

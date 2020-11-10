@@ -1824,7 +1824,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background-color: rgba(144, 144, 144, 0.25);
+		background-color: rgba(0, 0, 0, 0.55);
 		border-radius: 3px;
 		border: none;
 		color: inherit;
@@ -3784,7 +3784,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#home {
-				padding: 7em 3em 5em 3em ;
+				padding: 9em 3em 7em 3em ;
 				height: auto;
 				min-height: 0;
 			}
